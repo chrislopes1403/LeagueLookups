@@ -125,7 +125,8 @@ ul {
     var(--gold-light) 100%
   );
   background-size: 100%;
-  background-clip: text;
+  /*
+  -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
@@ -133,7 +134,7 @@ ul {
   align-items: center;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.3rem;*/
   font-family: "Expletus Sans";
 }
 
