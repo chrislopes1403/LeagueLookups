@@ -9,7 +9,7 @@ const ChampionCard = ({champion}) =>{
         return( 
         <Link to={`/details/${champion.id}`}>
         <figure className="card">
-            <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion.id}_0.jpg`} alt={champion.name}/>
+            <img src={`https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion.id}_0.jpg`} alt={champion.name}/>
             <figcaption>{champion.name}</figcaption>
         </figure>
         </Link>

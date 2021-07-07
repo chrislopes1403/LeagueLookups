@@ -104,17 +104,16 @@ const ChampionDetails = ({match, fetchChampionDetails,champion,history})=>{
 
     
     const renderAbilities = ()=>{
-
            return( 
             <div className="skills">
                     <div className="skill-card" onClick={()=>handleDescription(0)}>
-                        <img src={`http://ddragon.leagueoflegends.com/cdn/11.12.1/img/passive/${details.passive.image.full}`} alt=""/>
+                        <img src={`https://ddragon.leagueoflegends.com/cdn/11.12.1/img/passive/${details.passive.image.full}`} alt=""/>
                     </div>
 
                 {
                     details.spells.map((ability,i)=>{
                         return (<div key={i} className="skill-card" onClick={()=>handleDescription(i+1)}>
-                                    <img src={`http://ddragon.leagueoflegends.com/cdn/11.12.1/img/spell/${ability.image.full}`} alt=""/>
+                                    <img src={`https://ddragon.leagueoflegends.com/cdn/11.12.1/img/spell/${ability.image.full}`} alt=""/>
                                 </div>);
                     })
                 }
@@ -167,7 +166,7 @@ const ChampionDetails = ({match, fetchChampionDetails,champion,history})=>{
     return   details ? (
     <div>
         
-        <h2 className="top-h2"><strong id="results-description">{details.id}</strong></h2>
+        <h2 className="top-h2"><strong id="results-description">{details.name}</strong></h2>
         <div className="details">
             <div>
                 <h3 className={`skins-header ${currentSlide===0 ? 'hideText' : ''}`}>{details.skins[currentSlide].name}</h3>
