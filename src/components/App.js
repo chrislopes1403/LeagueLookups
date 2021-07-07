@@ -5,7 +5,7 @@ import ChampionList from './ChampionList';
 import ChampionDetails from './ChampionDetails';
 import {connect} from 'react-redux';
 import {fetchChampionTags,fetchChampions} from './../actions';
-import './mainStyles.css';
+//import './mainStyles.css';
 
 
 
